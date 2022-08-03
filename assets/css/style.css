@@ -246,7 +246,6 @@ body {
 /* recent work secction styling start here */
 .recent-work {
   min-height: 90vh;
-  background-color: #fff;
 }
 .recent-work img {
   width: 100%;
@@ -299,9 +298,113 @@ body {
 
 /* team section styling starts here */
 
+#team {
+  min-height: 70vh;
+}
 
-
+#team-details {
+  background-color: #112e41;
+  min-height: 40vh;
+}
+.team-member {
+  border: 2px solid white;
+}
+.team-member .card {
+  color: #fff;
+  border: none;
+}
+.team-member .card img {
+  width: 100%;
+}
+.team-member .card .card-body {
+  background-color: #112e41;
+}
+.team-member .card .card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+.team-member .card p,
+a {
+  color: #abb2ba;
+  text-align: center;
+}
+.team-member .card p {
+  font-size: 16px;
+}
+.team-member .card a {
+  text-decoration: none;
+}
 /* team section styling ends here */
+
+/* news section styling starts here */
+#news {
+  min-height: 70vh;
+}
+#news .card {
+  transition: all 0.4s ease-in-out;
+}
+.timeline {
+  font-size: 16px;
+  font-weight: 500;
+  color: #646464;
+}
+#news .card .card-img-top {
+  width: 100%;
+}
+#news a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+#news a h5 {
+  font-size: 20px;
+}
+#news .card a:hover h5 {
+  color: #f15381;
+}
+#news .links a {
+  font-size: 16px;
+}
+#news .links a i {
+  color: #f15381;
+}
+/* news section styling ends here */
+
+/* footer section styling starts here */
+footer {
+  background-color: #112e41;
+  color: #fff;
+}
+.footer-section1 p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #abb2ba;
+  line-height: 25px;
+  text-align: justify;
+}
+footer .insta-img img {
+  width: 70px;
+  height: 70px;
+}
+
+.footer-section2 h3 {
+  font-family: "Poppins", sans-serif;
+}
+footer .form {
+  margin-bottom: 20px;
+}
+.input-group-append button {
+  background-color: #f15381;
+  color: #fff;
+  border: 0px;
+}
+.social-links a {
+  color: #9d9999;
+  margin: 10px 5px;
+}
+footer hr {
+  border-top: 1px solid #fff;
+}
+/* footer section styling e here */
 
 @media only screen and (max-width: 991px) and (min-width: 678px) {
   body {
@@ -320,6 +423,18 @@ body {
   }
 
   /* main page repsonsive code starts here */
+  #main {
+    height: 60vh;
+  }
+  #about .image-section {
+    position: static !important;
+  }
+  .image-section {
+    background-color: #f0eed4;
+  }
+  #about #square {
+    left: 0;
+  }
   #main .main-page-box1,
   .main-page-box2 {
     display: none;
@@ -358,13 +473,33 @@ body {
   .card .card-icon {
     padding: 15px;
   }
+
+  .recent-work img {
+    width: 100%;
+    height: 100%;
+  }
+  .recent-work .text-section .para {
+    font-weight: 500;
+  }
+  .recent-work .text-section .work-heading {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .recent-work .text-section p {
+    word-spacing: 1px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   body {
     background-color: #f0eed4;
   }
-
+  .intro-para {
+    font-size: 18px;
+  }
+  .intro-heading {
+    font-size: 25px;
+  }
   .navbar-nav {
     background-color: #fff;
     text-align: center;
